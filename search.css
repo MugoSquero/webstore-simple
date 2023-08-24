@@ -1,0 +1,168 @@
+/* Reset some default browser styles */
+body, h2, ul, li, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: space-between; /* Vertical centering */
+    align-items: center;
+    min-height: 100vh; /* Change to min-height */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ff00ff; /* Purple */
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+.extension-title {
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #ddc663;
+	text-align: center;
+}
+
+.extension {
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #222; /* Dark background color */
+}
+
+.extension img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.extension-info {
+    margin-top: 10px;
+}
+
+.extension-name {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #ff00ff; /* Purple */
+}
+
+.extension-author {
+    font-size: 14px;
+    color: #999;
+}
+
+.extension-description {
+    margin-top: 5px;
+    color: #ccc;
+}
+
+.extension-rating {
+    margin-top: 5px;
+    color: #00ff00; /* Green */
+}
+
+.extension-install-count {
+    margin-top: 5px;
+    color: #999;
+}
+
+.extension-id {
+    margin-top: 5px;
+    color: #999;
+}
+
+.error {
+    color: red;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.details-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #00a500; /* Green */
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+	margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.details-button:hover {
+    background-color: #255928; /* Darker green on hover */
+    text-decoration: none;
+}
+
+
+.install-button {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.install-button:hover {
+    background-color: #4e1b71;
+	text-decoration: none;
+}
+
+/* Center text within containers */
+.container {
+    text-align: center;
+}
+
+.extension {
+    text-align: left;
+}
+
+.extension-info {
+    text-align: center;
+}

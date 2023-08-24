@@ -1,0 +1,186 @@
+/* Reset some default styles */
+body, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: space-between; /* Vertical centering */
+    align-items: center;
+    min-height: 100vh; /* Change to min-height */
+}
+
+.detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.extension-pane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.extension {
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.extension-image-container {
+    flex: 0 0 120px;
+}
+
+.extension-image {
+    width: 100%;
+    height: auto;
+}
+
+.extension-info {
+    flex: 1;
+    padding: 20px;
+}
+
+.extension-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+	color: #ff00ff;
+}
+
+.extension-author {
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+
+.extension-description {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.extension-rating,
+.extension-install-count,
+.extension-id {
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 10px;
+}
+
+.extension-overview,
+.extension-website,
+.extension-support-uri,
+.extension-version,
+.extension-update-date,
+.extension-languages,
+.extension-size,
+.extension-contact,
+.extension-privacy-policy {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #8a8a8a;
+}
+
+.language-dropdown {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px; /* Adjust the font size */
+}
+
+.language-list {
+    position: absolute;
+    bottom: 100%; /* Position above the count */
+    left: 0;
+    background-color: #000;
+    border: 1px solid #ccc;
+    padding: 10px; /* Increase the padding */
+    display: none;
+    width: 250px; /* Set a width for the dropdown */
+    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.language-dropdown:hover .language-list {
+    display: block;
+}
+
+.language-dropdown:hover .language-list {
+    display: block;
+}
+
+.languages-count {
+    text-decoration: underline; /* Underline the languages count */
+}
+
+.install-button {
+    display: flex;
+    background-color: #6a1b9a;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 7px;
+	font-size: 22px;
+    text-decoration: none;
+    margin-top: 20px;
+	align-items: center;
+	text-align: center;
+	max-width: 65px;
+	justify-content: space-around;
+    transition: background-color 0.3s ease;
+}
+
+.install-button:hover {
+    background-color: #8e24aa;
+}
+
+.collage-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.image {
+    width: calc(33.33% - 10px);
+    height: auto;
+    margin: 5px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .extension-pane {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .extension {
+        flex-direction: column;
+    }
+
+    .extension-image-container {
+        width: 100%;
+    }
+
+    .extension-info {
+        padding: 20px;
+        text-align: center;
+    }
+}

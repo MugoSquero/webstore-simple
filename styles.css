@@ -1,0 +1,120 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; /* Change to column direction */
+    justify-content: space-between; /* Vertical centering */
+    align-items: center;
+    min-height: 100vh; /* Change to min-height */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	justify-content: center;
+}
+
+.site-footer {
+    background-color: #1f1f1f;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+    text-align: center;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #a100a1;
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
+    animation: neonGlow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow {
+    0% {
+        text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
+    }
+    100% {
+        text-shadow: 0 0 20px rgba(138, 43, 226, 0.8), 0 0 40px rgba(138, 43, 226, 0.8), 0 0 60px rgba(138, 43, 226, 0.8);
+    }
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Label styling */
+label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Input box styling */
+input[type="text"] {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(138, 43, 226, 0.2); /* Semi-transparent purple */
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+/* Button styling */
+button {
+    padding: 0.5rem 1rem;
+    background-color: #8a2be2; /* Purple */
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #6a1aad; /* Darker purple */
+}
+
+select {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(138, 43, 226, 0.2); /* Semi-transparent purple */
+    color: #fff;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+option {
+    background-color: #000;
+}
+
+
+/* Label for dropdown styling */
+label[for="chromiumVersion"] {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
