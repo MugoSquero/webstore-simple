@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="misc/footer.css">
     <title>Web Store Simple</title>
 </head>
 <body>
@@ -30,6 +30,6 @@
 			</form>
 		</div>
 	</div>
-<?php include 'footer.html'; ?>
+<?php include 'misc/footer.html'; ?>
 </body>
 </html>

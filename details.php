@@ -60,9 +60,9 @@ if (isset($response[1][1])) {
 <head>
     <title><?php echo $name; ?> - Web Store Simple</title>
     <link rel="stylesheet" type="text/css" href="details.css">
-    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="misc/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<?php include 'header.html'; ?>
+<?php include 'misc/header.html'; ?>
 <div class="detail-container">
 <?php
     echo "<ul class=\"extension-pane\">";
@@ -121,6 +121,6 @@ curl_close($ch);
     ?>
 </div>
 
-<?php include 'footer.html'; ?>
+<?php include 'misc/footer.html'; ?>
 </body>
 </html>

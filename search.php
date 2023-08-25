@@ -18,9 +18,9 @@ if (isset($_GET['version']) && !($_GET['version'] > 118)) {
 <head>
     <title>Search results - Web Store Simple</title>
     <link rel="stylesheet" type="text/css" href="search.css">
-	<link rel="stylesheet" type="text/css" href="footer.css">
+	<link rel="stylesheet" type="text/css" href="misc/footer.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<?php include 'header.html'; ?>
+<?php include 'misc/header.html'; ?>
 <?php
 
 $data = "login=&";
@@ -91,6 +91,6 @@ foreach ($extensionsByCategory as $category => $categoryExtensions) {
 // Close the cURL session
 curl_close($ch);
 ?>
-<?php include 'footer.html'; ?>
+<?php include 'misc/footer.html'; ?>
 </body>
 </html>
