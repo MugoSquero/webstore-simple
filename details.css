@@ -5,6 +5,7 @@ body, h2, h3, p, ul, li, a {
     font-family: Arial, Helvetica, sans-serif;
     list-style: none;
     text-decoration: none;
+	list-style-image: none;
 }
 
 body {
@@ -16,6 +17,10 @@ body {
     justify-content: space-between; /* Vertical centering */
     align-items: center;
     min-height: 100vh; /* Change to min-height */
+}
+
+* {
+	scrollbar-color: #2d353a #000000;
 }
 
 .detail-container {
@@ -102,14 +107,15 @@ body {
 
 .language-list {
     position: absolute;
-    bottom: 100%; /* Position above the count */
+    bottom: 100%;
     left: 0;
     background-color: #000;
     border: 1px solid #ccc;
-    padding: 10px; /* Increase the padding */
+	border-color: rgb(34, 43, 47);
+    padding: 10px;
     display: none;
-    width: 250px; /* Set a width for the dropdown */
-    box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -3px 6px;
 }
 
 .language-dropdown:hover .language-list {
@@ -126,12 +132,12 @@ body {
 
 .install-button {
     display: flex;
-    background-color: #6a1b9a;
+    background-color: rgb(70, 0, 130);
     color: #ffffff;
     padding: 10px 15px;
     border-radius: 7px;
 	font-size: 22px;
-    text-decoration: none;
+    text-decoration-color: currentcolor;
     margin-top: 20px;
 	align-items: center;
 	text-align: center;
@@ -141,7 +147,8 @@ body {
 }
 
 .install-button:hover {
-    background-color: #8e24aa;
+    background-color: rgb(34, 0, 78);
+	text-decoration-color: currentcolor;
 }
 
 .collage-container {

@@ -18,10 +18,9 @@
 }
 
 .footer-links a {
-    color: #8a8a8a;
+    color: rgb(185, 173, 152);
     margin-right: 20px;
     text-decoration: none;
-	align-items: center;
     transition: color 0.3s ease;
 }
 

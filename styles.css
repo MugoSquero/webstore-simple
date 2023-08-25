@@ -3,6 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+	scrollbar-color: #2d353a #000000;
+}
+
+html {
+    color-scheme: dark !important;
 }
 
 /* Body background */
@@ -42,8 +47,8 @@ body {
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: #a100a1;
-    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
+    color: rgb(255, 80, 255);
+    text-shadow: rgba(95, 0, 207, 0.8) 0px 0px 10px, rgba(95, 0, 207, 0.8) 0px 0px 20px, rgba(95, 0, 207, 0.8) 0px 0px 30px;
     animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
 
@@ -71,10 +76,11 @@ label {
 
 /* Input box styling */
 input[type="text"] {
+	border-color: currentcolor;
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: rgba(138, 43, 226, 0.2); /* Semi-transparent purple */
+    background-color: rgba(56, 0, 198, 0.2);
     color: #fff;
     margin-bottom: 1rem;
     width: 100%;
@@ -83,7 +89,7 @@ input[type="text"] {
 /* Button styling */
 button {
     padding: 0.5rem 1rem;
-    background-color: #8a2be2; /* Purple */
+    background-color: rgb(95, 0, 207);
     border: none;
     border-radius: 5px;
     color: #fff;
@@ -94,14 +100,14 @@ button {
 
 /* Button hover effect */
 button:hover {
-    background-color: #6a1aad; /* Darker purple */
+    background-color: rgb(70, 0, 154);
 }
 
 select {
     padding: 0.5rem;
     border: none;
     border-radius: 5px;
-    background-color: rgba(138, 43, 226, 0.2); /* Semi-transparent purple */
+    background-color: rgba(56, 0, 198, 0.2);
     color: #fff;
     margin-bottom: 1rem;
     width: 100%;
@@ -110,7 +116,6 @@ select {
 option {
     background-color: #000;
 }
-
 
 /* Label for dropdown styling */
 label[for="chromiumVersion"] {

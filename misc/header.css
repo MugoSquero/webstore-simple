@@ -7,8 +7,8 @@ h1 {
     padding: 5px;
     font-size: 42px;
     margin-bottom: 1rem;
-    color: #a100a1;
-    text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
+    color: rgb(255, 80, 255);
+    text-shadow: rgba(95, 0, 207, 0.8) 0px 0px 10px, rgba(95, 0, 207, 0.8) 0px 0px 20px, rgba(95, 0, 207, 0.8) 0px 0px 30px;
     animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
 

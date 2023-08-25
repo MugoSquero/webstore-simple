@@ -4,6 +4,10 @@ body, h2, ul, li, p {
     padding: 0;
 }
 
+html {
+    color-scheme: dark !important;
+}
+
 body {
     background-color: #000;
     color: #fff;
@@ -13,6 +17,10 @@ body {
     justify-content: space-between; /* Vertical centering */
     align-items: center;
     min-height: 100vh; /* Change to min-height */
+}
+
+* {
+	scrollbar-color: #2d353a #000000;
 }
 
 .container {
@@ -116,8 +124,9 @@ ul {
 .details-button {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #00a500; /* Green */
+    background-color: rgb(0, 144, 0);
     color: white;
+	border-color: currentcolor;
     border: none;
     border-radius: 7px;
     text-align: center;
@@ -129,16 +138,17 @@ ul {
 }
 
 .details-button:hover {
-    background-color: #255928; /* Darker green on hover */
-    text-decoration: none;
+    background-color: rgb(0, 48, 0);
+    text-decoration-color: currentcolor;
 }
 
 
 .install-button {
     display: inline-block;
     padding: 8px 20px;
-    background-color: #6a1b9a;
+    background-color: rgb(70, 0, 130);
     color: white;
+	text-decoration-color: currentcolor;
     border: none;
     border-radius: 7px;
     text-align: center;
@@ -150,8 +160,8 @@ ul {
 }
 
 .install-button:hover {
-    background-color: #4e1b71;
-	text-decoration: none;
+    background-color: rgb(34, 0, 78);
+	text-decoration-color: currentcolor;
 }
 
 /* Center text within containers */
