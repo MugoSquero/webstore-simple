@@ -12,6 +12,12 @@ h1 {
     animation: neonGlow 1.5s ease-in-out infinite alternate;
 }
 
+.header {
+    text-decoration: none;
+	all: unset;
+	cursor: pointer;
+}
+
 @keyframes neonGlow {
     0% {
         text-shadow: 0 0 10px rgba(138, 43, 226, 0.8), 0 0 20px rgba(138, 43, 226, 0.8), 0 0 30px rgba(138, 43, 226, 0.8);
