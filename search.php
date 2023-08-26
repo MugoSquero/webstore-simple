@@ -64,11 +64,11 @@ foreach ($extensionsByCategory as $category => $categoryExtensions) {
         echo "<li class=\"extension\">";
         if (isset($extension[4])) {
             echo "<div class=\"extension-image-container\">";
-            echo "<img class=\"extension-image\" src=\"http://" . $_SERVER['SERVER_NAME'] . "/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
+            echo "<img class=\"extension-image\" src=\"/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
             echo "</div>";
         } elseif (isset($extension[3])) {
             echo "<div class=\"extension-image-container\">";
-            echo "<img class=\"extension-image\" src=\"http://" . $_SERVER['SERVER_NAME'] . "/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
+            echo "<img class=\"extension-image\" src=\"/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
             echo "</div>";
         }
         echo "<div class=\"extension-info\">";
@@ -79,8 +79,8 @@ foreach ($extensionsByCategory as $category => $categoryExtensions) {
         echo "<p class=\"extension-install-count\"><b>Install Count</b>: $installCount</p>";
         echo "<p class=\"extension-id\"><b>Extension ID</b>: $extensionID</p>";
 		echo "<div class=\"button-container\">";
-		echo "<a class=\"details-button\" href=\"http://" . $_SERVER['SERVER_NAME'] . "/details.php?extensionID=" . urlencode($extensionID) . "&version=" . urlencode($chromiumVersion) . "\">Details</a>";
-        echo "<a class=\"install-button\" href=\"http://" . $_SERVER['SERVER_NAME'] . "/crx_proxy.php?url=" .  urlencode("https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$chromiumVersion&x=id%3D$extensionID%26installsource%3Dondemand%26uc") . "&extid=" . urlencode($extensionID) . "\">Install</a>";
+		echo "<a class=\"details-button\" href=\"/details.php?extensionID=" . urlencode($extensionID) . "&version=" . urlencode($chromiumVersion) . "\">Details</a>";
+        echo "<a class=\"install-button\" href=\"/crx_proxy.php?url=" .  urlencode("https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$chromiumVersion&x=id%3D$extensionID%26installsource%3Dondemand%26uc") . "&extid=" . urlencode($extensionID) . "\">Install</a>";
         echo "</div>";
         echo "</div>";
         echo "</li>";

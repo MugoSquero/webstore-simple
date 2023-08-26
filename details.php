@@ -69,11 +69,11 @@ if (isset($response[1][1])) {
     echo "<li class=\"extension\">";
     if (isset($details[4])) {
         echo "<div class=\"extension-image-container\">";
-        echo "<img class=\"extension-image\" src=\"http://" . $_SERVER['SERVER_NAME'] . "/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
+        echo "<img class=\"extension-image\" src=\"/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
         echo "</div>";
     } elseif (isset($details[3])) {
         echo "<div class=\"extension-image-container\">";
-        echo "<img class=\"extension-image\" src=\"http://" . $_SERVER['SERVER_NAME'] . "/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
+        echo "<img class=\"extension-image\" src=\"/image_proxy.php?url=" . urlencode($iconUrl) . "\" alt=\"$name\">";
         echo "</div>";
     }
     echo "<div class=\"extension-info\">";
@@ -97,7 +97,7 @@ if (isset($response[1][1])) {
     echo "<p class=\"extension-size\"><b>Size</b>: $size</p>";
     echo "<p class=\"extension-contact\"><b>Contact</b>: $contact</p>";
     echo "<p class=\"extension-privacy-policy\"><b>Privacy Policy</b>: $privacyPolicy</p>";
-    echo "<a class=\"install-button\" href=\"http://" . $_SERVER['SERVER_NAME'] . "/crx_proxy.php?url=" .  urlencode("https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$chromiumVersion&x=id%3D$extensionID%26installsource%3Dondemand%26uc") . "&extid=" . urlencode($extensionID) . "\">Install</a>";
+    echo "<a class=\"install-button\" href=\"/crx_proxy.php?url=" .  urlencode("https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$chromiumVersion&x=id%3D$extensionID%26installsource%3Dondemand%26uc") . "&extid=" . urlencode($extensionID) . "\">Install</a>";
 
     echo "</div>";
     echo "</li>";
@@ -114,7 +114,7 @@ curl_close($ch);
         foreach ($images as $index => $image) {
 			if (!empty($image[17]) || isset(($image[17]))) {
             echo '<div class="image">';
-            echo '<img src="http://' . $_SERVER['SERVER_NAME'] . "/image_proxy.php?url=" . urlencode($image[17]) . '" alt="" width="640" height="400">';
+            echo '<img src="/image_proxy.php?url=' . urlencode($image[17]) . '" alt="" width="640" height="400">';
             echo '</div>';
 		}
     }
