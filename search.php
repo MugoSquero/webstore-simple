@@ -37,7 +37,7 @@ $extensions = $response[1][1];
 
 if (!isset($extensions[1])) {
 	echo "<h2 class=\"error\">An error occured: No results found.</h2>";
-	include 'footer.html';
+	include 'misc/footer.html';
 	exit(0);
 }
 
