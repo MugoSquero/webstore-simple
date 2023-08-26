@@ -114,7 +114,9 @@ curl_close($ch);
         foreach ($images as $index => $image) {
 			if (!empty($image[17]) || isset(($image[17]))) {
             echo '<div class="image">';
+			echo "<a href='/image_proxy.php?url=" . urlencode($image[17]) . "' target='_blank'>";
             echo '<img src="/image_proxy.php?url=' . urlencode($image[17]) . '" alt="" width="640" height="400">';
+            echo '</a>';
             echo '</div>';
 		}
     }
