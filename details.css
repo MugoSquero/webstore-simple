@@ -84,6 +84,11 @@ body {
     margin-bottom: 10px;
 }
 
+a {
+    color: #8a8a8a;
+    text-decoration: underline;
+}
+
 .extension-overview,
 .extension-website,
 .extension-support-uri,
@@ -141,6 +146,7 @@ body {
     margin-top: 20px;
 	align-items: center;
 	text-align: center;
+	text-decoration: none;
 	max-width: 65px;
 	justify-content: space-around;
     transition: background-color 0.3s ease;

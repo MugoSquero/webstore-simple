@@ -83,9 +83,9 @@ if (isset($response[1][1])) {
     echo "<p class=\"extension-rating\"><b>Rating</b>: $rating</p>";
     echo "<p class=\"extension-install-count\"><b>Install Count</b>: $installCount</p>";
     echo "<p class=\"extension-id\"><b>Extension ID</b>: $extensionID</p>";
-    echo "<p class=\"extension-overview\"><b>Overview</b>: $overview</p>";
-    echo "<p class=\"extension-website\"><b>Website</b>: $website</p>";
-    echo "<p class=\"extension-support-uri\"><b>Support URI</b>: $supportURI</p>";
+    echo "<p class=\"extension-overview\"><b>Overview</b>: $overview</p>";?>
+    <p class="extension-website"><b>Website</b>: <?php echo !empty($details[3]) ? "<a href='$website' target='_blank'>$website</a>" : $website; ?></p>
+    <p class="extension-support-uri"><b>Support URI</b>: <?php echo !empty($details[5]) ? "<a href='$supportURI' target='_blank'>$supportURI</a>" : $supportURI; ?></p><?php
     echo "<p class=\"extension-version\"><b>Version</b>: $version</p>";
     echo "<p class=\"extension-update-date\"><b>Update Date</b>: $updateDate</p>";
     echo "<div class=\"extension-languages\">";
@@ -94,9 +94,9 @@ if (isset($response[1][1])) {
     echo "<span class=\"language-list\">$languagesList</span>";
     echo "</span></p>";
     echo "</div>";
-    echo "<p class=\"extension-size\"><b>Size</b>: $size</p>";
-    echo "<p class=\"extension-contact\"><b>Contact</b>: $contact</p>";
-    echo "<p class=\"extension-privacy-policy\"><b>Privacy Policy</b>: $privacyPolicy</p>";
+    echo "<p class=\"extension-size\"><b>Size</b>: $size</p>";?>
+    <p class="extension-contact"><b>Contact</b>: <?php echo !empty($details[35][0]) ? "<a href='$contact' target='_blank'>$contact</a>" : $contact; ?></p>
+    <p class="extension-privacy-policy"><b>Privacy Policy</b>: <?php echo !empty($details[35][2]) ? "<a href='$privacyPolicy' target='_blank'>$privacyPolicy</a>" : $privacyPolicy; ?></p><?php
     echo "<a class=\"install-button\" href=\"/crx_proxy.php?url=" .  urlencode("https://clients2.google.com/service/update2/crx?response=redirect&acceptformat=crx2,crx3&prodversion=$chromiumVersion&x=id%3D$extensionID%26installsource%3Dondemand%26uc") . "&extid=" . urlencode($extensionID) . "\">Install</a>";
 
     echo "</div>";
