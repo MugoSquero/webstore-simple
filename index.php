@@ -18,9 +18,9 @@
 				<!-- Dropdown select for Chromium version -->
 				<label for="chromiumVersion">Select Chromium Version:</label>
 				<select id="chromiumVersion" name="version">
-					<!-- Generate options from version 1 to 118 -->
+					<!-- Generate options from version 1 to 119 -->
 					<?php
-						for ($i = 118; $i >= 1; $i--) {
+						for ($i = 119; $i >= 1; $i--) {
 							echo "<option value='$i'>$i</option>";
 						}
 					?>

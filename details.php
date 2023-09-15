@@ -6,7 +6,7 @@ if (isset($_GET['extensionID'])) {
     echo "An error occured, extensionID is missing.";
     exit(0);
 }
-if (isset($_GET['version']) && !($_GET['version'] > 118)) {
+if (isset($_GET['version']) && !($_GET['version'] > 119)) {
     $chromiumVersion = $_GET['version'];
 } else {
     echo "Please select a valid chromium version.";
